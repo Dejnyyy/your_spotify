@@ -180,7 +180,6 @@ export default function Sider({ className, isDrawer }: SiderProps) {
       </div>
       <SiderSearch onArtistClick={goToArtist} onTrackClick={goToTrack} />
       <nav>
-        
         {links.map(category => (
           <div className={s.category} key={category.label}>
             <Text element="div" onDark className={s.categoryname}>
@@ -197,9 +196,7 @@ export default function Sider({ className, isDrawer }: SiderProps) {
                       onCopy={copyCurrentPage}
                       text={toCopy}>
                       <div className={s.link} key={link.label}>
-                        
                         <Text
-                        
                           onDark
                           className={clsx(s.linkcontent, {
                             [s.active]: active,
@@ -207,7 +204,6 @@ export default function Sider({ className, isDrawer }: SiderProps) {
                           {active ? link.iconOn : link.icon}
                           {link.label}
                         </Text>
-                        
                       </div>
                     </CopyToClipboard>
                   );

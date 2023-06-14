@@ -5,29 +5,23 @@
   color: white;
   padding: 16px;
 }
-
 .root::-webkit-scrollbar {
   display: none;
 }
-
 .drawer {
   width: 300px;
 }
-
 .title {
   display: block;
   margin-bottom: 32px;
   color: white;
 }
-
 .category {
   margin-bottom: 32px;
 }
-
 .categoryname {
   margin-bottom: 16px;
 }
-
 .link {
   display: flex;
   margin-bottom: 8px;
@@ -39,26 +33,21 @@
   align-items: center;
   cursor: pointer;
 }
-
 .linkcontent {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
-
 .linkcontent > :first-child {
   margin-right: 8px;
 }
-
 .link > span {
   margin-right: 8px;
 }
-
 .link:hover {
   background: grey;
   text-decoration: underline;
 }
-
 .active {
   color: var(--accent) !important;
 }
